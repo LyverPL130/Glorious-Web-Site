@@ -21,16 +21,16 @@ body {
     font-size: 4em;
     color: #fff;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #d0ff00, #007acc); /* 漸變背景 */
+    background: linear-gradient(to right, #ffffff, #007acc); /* 漸變背景 */
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(255, 208, 0, 0.5), 0 0 5px rgba(0, 153, 255, 0.3); /* 發光效果 */
+    text-shadow: 0 0 10px rgba(54, 54, 54, 0.5), 0 0 5px rgba(0, 153, 255, 0.3); /* 發光效果 */
 }
 
 .main-content h2 {
     font-size: 2.5em;
-    color: #00ff99;
+    color: #383838;
     margin-top: 10px;
 }
 
@@ -100,14 +100,14 @@ body {
 }
 
 .navbar h1 span {
-    background: linear-gradient(to right, #d0ff00, #007acc);
+    background: linear-gradient(to right, #ffffff, #007acc);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: colorChange 5s ease infinite;
     display: inline;
-    text-shadow: 0 0 10px rgba(255, 208, 0, 0.253), 0 0 5px rgba(0, 153, 255, 0.13);
+    text-shadow: 0 0 10px rgba(71, 71, 71, 0.253), 0 0 5px rgba(0, 153, 255, 0.13);
 }
 
 .nav-links {
@@ -135,7 +135,7 @@ body {
 
 .nav-links a:hover {
     text-decoration: underline;
-    color: #00ff99;
+    color: #383838;
 }
 .container h2, .container2 h2, .container2 h3 {
     color: #00ccff;

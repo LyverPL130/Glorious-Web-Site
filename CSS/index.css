@@ -33,14 +33,14 @@ body {
 }
 
 .navbar h1 span {
-    background: linear-gradient(to right, #d0ff00, #007acc);
+    background: linear-gradient(to right, #ffffff, #007acc);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: colorChange 5s ease infinite;
     display: inline;
-    text-shadow: 0 0 10px rgba(255, 208, 0, 0.253), 0 0 5px rgba(0, 153, 255, 0.13);
+    text-shadow: 0 0 10px rgba(59, 59, 59, 0.253), 0 0 5px rgba(0, 153, 255, 0.13);
 }
 
 .nav-links {
@@ -68,7 +68,7 @@ body {
 
 .nav-links a:hover {
     text-decoration: underline;
-    color: #bbff00;
+    color: #b6b6b6;
 }
 
 .main-content {
@@ -200,14 +200,14 @@ h3 {
 }
 
 .main-content h1 span, h2 span {
-    background: linear-gradient(to right, #d0ff00, #007acc);
+    background: linear-gradient(to right, #ffffff, #007acc);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: colorChange 5s ease infinite;
     display: inline;
-    text-shadow: 0 0 10px rgba(255, 208, 0, 0.253), 0 0 5px rgba(0, 153, 255, 0.13);
+    text-shadow: 0 0 10px rgba(59, 59, 59, 0.253), 0 0 5px rgba(0, 153, 255, 0.13);
 }
 
 .container2 section {
@@ -227,9 +227,9 @@ h3 {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: radial-gradient(circle, #ff0 0%, transparent 70%);
+    background: radial-gradient(circle, rgb(110, 110, 110) 0%, transparent 70%);
     border-radius: 50%;
-    box-shadow: 0 0 20px #ff0;
+    box-shadow: 0 0 20px rgb(77, 77, 77);
     animation: star 2s infinite;
     top: 50%;
     left: 50%;
@@ -296,7 +296,7 @@ h3 {
 }
 
 .sidebar-links a:hover {
-    color: #bbff00;
+    color: #474747;
 }
 
 @media (max-width: 768px) {
