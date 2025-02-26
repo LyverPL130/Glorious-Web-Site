@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 找不到頁面</title>
+    <link href="picture/icon.png" rel="icon" type="image/png">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+        }
+        .message {
+            font-size: 5em;
+            font-weight: bold;
+            margin: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .description {
+            font-size: 1.5em;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .link {
+            font-size: 1.2em;
+            color: #00aaff;
+            text-decoration: none;
+            border: 2px solid #00aaff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .link:hover {
+            background-color: #00aaff;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .star {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #ff0 0%, transparent 70%);
+            border-radius: 50%;
+            box-shadow: 0 0 20px #ff0;
+            animation: star 2s infinite;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .star:nth-child(2) {
+            top: 100px;
+            left: 30%;
+            animation-delay: 1s;
+        }
+        .star:nth-child(3) {
+            top: 200px;
+            left: 70%;
+            animation-delay: 2s;
+        }
+        @keyframes star {
+            0% { transform: translateX(-50%) translateY(-50%) scale(1); }
+            50% { transform: translateX(-50%) translateY(-50%) scale(1.5); }
+            100% { transform: translateX(-50%) translateY(-50%) scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">404</div>
+        <div class="description">哎呀！頁面找不到了。</div>
+        <a class="link" href="/">返回首頁</a>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+</body>
+</html>
