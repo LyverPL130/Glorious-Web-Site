@@ -6,17 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const defaultSubtitle = document.querySelector('.content h2');
 
     const introductions = {
-      t1: '這是類型 t1 的介紹。',
-      t1_c1: '這是類型 t1，類別 c1 的介紹。',
-      t1_c1_cm1: '這是類型 t1，類別 c1，內容 cm1 的介紹。',
-      t1_c1_cm2: '這是類型 t1，類別 c1，內容 cm2 的介紹。',
-      t1_c1_cm3: '這是類型 t1，類別 c1，內容 cm3 的介紹。',
-      t1_c2: '這是類型 t1，類別 c2 的介紹。',
-      t1_c2_cm1: '這是類型 t1，類別 c2，內容 cm1 的介紹。',
-      t1_c2_cm2: '這是類型 t1，類別 c2，內容 cm2 的介紹。',
-      t2: '這是類型 t2 的介紹。',
-      t2_c1: '這是類型 t2，類別 c1 的介紹。',
-      t2_c1_cm1: '這是類型 t2，類別 c1，內容 cm1 的介紹。',
+      t1: '<h1>這是類型 t1 的介紹。</h1>',
+      t1_c1: '<h1>這是類型 t1，類別 c1 的介紹。</h1>',
+      t1_c2: '<h1>這是類型 t1，類別 c2 的介紹。</h1>',
+      t2: '<h1>這是類型 t2 的介紹。</h1>',
+      t2_c1: '<h1>這是類型 t2，類別 c1 的介紹。</h1>',
     };
   
     const commandContents = {
@@ -40,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (introductions[type]) {
         introductionDiv.innerHTML = `<p>${introductions[type]}</p>`;
       } else {
-        introductionDiv.innerHTML = '<p>找不到相關介紹。</p>';
+        introductionDiv.innerHTML = '';
       }
 
       if (commandContents[type]) {
