@@ -124,7 +124,7 @@ footer {
   .back-button:hover {
     background: linear-gradient(135deg, #555, #333);
   }
-  .tos-button {
+  .privacy-button {
     padding: 8px 16px; /* 縮小按鈕內邊距 */
     background: linear-gradient(135deg, #444, #222);
     display: inline;
@@ -137,6 +137,6 @@ footer {
     transition: background-color 0.2s ease;
   }
   
-  .tos-button:hover {
+  .privacy-button:hover {
     background: linear-gradient(135deg, #555, #333);
   }
