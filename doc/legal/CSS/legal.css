@@ -24,7 +24,7 @@ body {
     align-items: center;
   }
   
-  .feature-button, .command-button {
+  .pp-button, .tos-button {
     display: inline-block;
     padding: 20px 40px; /* 增加按鈕內邊距 */
     margin: 0 30px; /* 增加按鈕間距 */
@@ -39,7 +39,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .feature-button:hover, .command-button:hover {
+  .pp-button:hover, .tos-button:hover {
     transform: translateY(-8px); /* 增加懸停時向上移動距離 */
     box-shadow: 0 8px 24px rgba(0, 150, 255, 0.7); /* 增加懸停時陰影 */
   }
