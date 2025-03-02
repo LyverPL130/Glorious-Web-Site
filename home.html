@@ -1,30 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>智語Lingent Bot - 首頁</title>
-    <link rel="stylesheet" href="/CSS/home.css">
-    <link rel="icon" href="./file/picture/57_20250227015914.png" type="image/x-icon">
-  </head>
-  <body>
 
-      <nav class="navbar">
-          <a href="./home" class="nav-rectangle"></a>
-          <span class="nav-separator">|</span>
-          <a href="/home">首頁</a>
-          <a href="/feature">功能</a>
-          <a href="/doc">文件</a>
-          <a href="#">支援</a>
-          <a href="invitation">邀請</a>
-        </nav>
-      
+<head>
+  <title>智語Lingent Bot - 首頁</title>
+  <link rel="stylesheet" href="/CSS/home.css">
+  <link rel="icon" href="./file/picture/57_20250227015914.png" type="image/x-icon">
+</head>
 
-    <div class="content">
-      <div class="logo-placeholder"></div>
-      <div class="bot-description">
-        <h1>一款現代化的智能機器人</h1>
-        <h2>智語Lingent Bot</h2>
-      </div>
+<body>
+
+  <nav class="navbar">
+    <a href="./home" class="nav-rectangle"></a>
+    <span class="nav-separator">|</span>
+    <a href="/home">首頁</a>
+    <a href="/feature">功能</a>
+    <a href="/doc">文件</a>
+    <a href="#">支援</a>
+    <a href="invitation">邀請</a>
+  </nav>
+
+
+  <div class="content">
+    <div class="logo-placeholder"></div>
+    <div class="bot-description">
+      <h1>一款現代化的智能機器人</h1>
+      <h2>智語Lingent Bot</h2>
     </div>
+  </div>
+  <div class="feature-display-container">
+    <div id="feature-display" class="feature-effect">多功能性</div>
+    <div class="controls">
+      <button id="prev-feature">&lt;</button>
+      <button id="next-feature">&gt;</button>
+    </div>
+  </div>
 
-  </body>
+  </div>
+  <div class="bottom-bar">
+    <div class="bottom-bar-icons">
+        <a href="#" class="bottom-bar-icon" title="首頁">
+            <svg>
+                </svg>
+        </a>
+        <a href="#" class="bottom-bar-icon" title="指令查詢">
+            <svg>
+                </svg>
+        </a>
+        <a href="#" class="bottom-bar-icon" title="社群連結">
+            <svg>
+                </svg>
+        </a>
+        <a href="#" class="bottom-bar-icon" title="設定">
+            <svg>
+                </svg>
+        </a>
+    </div>
+</div>
+  <footer>
+    <p>
+      版權所有 © 2025-<span id="current-year"></span> 智語Ligent Bot。保留所有權利。
+    </p>
+
+  </footer>
+  <script src="/SCRIPTS/home.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const currentYearSpan = document.getElementById('current-year');
+      const currentYear = new Date().getFullYear();
+      currentYearSpan.textContent = currentYear;
+    });
+  </script>
+</body>
+
 </html>
