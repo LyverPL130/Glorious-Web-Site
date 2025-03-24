@@ -92,6 +92,11 @@ body {
     transform: translateY(-20px);
   }
   .navbar {
+    position: sticky;
+    top:0;
+    min-height: 110px; /* 確保最小高度 */
+    padding: 10px;
+    box-sizing: border-box;
     background: linear-gradient(135deg, #444, #222);
     color: white;
     padding: 15px 25px; /* 增加內邊距 */
@@ -102,7 +107,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 200, 255, 0.3);
   }
   .nav-rectangle {
-    background-image: url('../../file/picture/icon.png');
+    background-image: url('/file/picture/icon.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,4 +133,31 @@ body {
   
   .navbar a:hover {
     color: #81d4fa;
+  }
+  
+  .content {
+    padding-top: 50px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+  }
+  .logo-placeholder {
+    width: 40%;
+    height: 0;
+    padding-bottom: 30%;
+    background-image: url('/file/picture/icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #5e5e5e9d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.5), /* 外發光 */
+                inset 0 0 5px rgba(0, 200, 255, 0.3); /* 內發光 */
+    margin-bottom: 2%;
+    animation: pulse 2s infinite ease-in-out;
+    border: 2px solid transparent; /* 透明邊框，用於 border-image */
+    border-image: linear-gradient(to right, rgba(0, 200, 255, 0.5), rgba(0, 200, 255, 0.1)) 1; /* 漸層邊框 */
   }
