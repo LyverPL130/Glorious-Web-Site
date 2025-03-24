@@ -25,14 +25,14 @@
         <h1>團隊成員</h1>
 
         <section class="department-container">
-            <h2>部門名稱 1</h2>
+            <h2>網站開發</h2>
             <div class="member-container">
                 <div class="member">
-                    <img src="/file/picture/member1.jpg" alt="成員名稱 1" class="member-avatar">
+                    <img src="/file/picture/member1.jpg" alt="lumi" class="member-avatar">
                     <div class="member-info">
-                        <h3>成員名稱 1</h3>
-                        <p class="role">職位/角色 1</p>
-                        <p class="contribution">貢獻/介紹 1</p>
+                        <h3>lumi/Tansan.</h3>
+                        <p class="role">網站主要開發人員</p>
+                        <p class="contribution">開發網站</p>
                     </div>
                 </div>
             </div>
@@ -71,23 +71,7 @@
     </footer>
 
     <script>
-        function adjustFooterPosition() {
-            const body = document.body;
-            const html = document.documentElement;
-            const windowHeight = window.innerHeight;
-            const bodyHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-            const footer = document.querySelector('footer');
-
-            if (bodyHeight + footer.offsetHeight <= windowHeight) {
-                footer.style.position = 'absolute';
-                footer.style.bottom = '0';
-            } else {
-                footer.style.position = 'static';
-            }
-        }
-
-        adjustFooterPosition();
-        window.addEventListener('resize', adjustFooterPosition);
+        
         document.addEventListener('DOMContentLoaded', function () {
             const currentYearSpan = document.getElementById('current-year');
             const currentYear = new Date().getFullYear();
