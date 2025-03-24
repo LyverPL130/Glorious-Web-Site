@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>團隊成員列表 - 智語Ligent Bot</title>
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/scroller.css">
+    <link rel="stylesheet" href="CSS/memberlist.css">
+    <link rel="icon" href="/file/picture/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="./home" class="nav-rectangle"></a>
+        <span class="nav-separator">|</span>
+        <a href="/home">首頁</a>
+        <a href="/feature">功能</a>
+        <a href="/doc">文件</a>
+        <a href="#">支援</a>
+        <a href="/invitation">邀請</a>
+    </nav>
+
+    <main class="member-list-container">
+        <h1>團隊成員</h1>
+
+        <section class="department-container">
+            <h2>部門名稱 1</h2>
+            <div class="member-container">
+                <div class="member">
+                    <img src="/file/picture/member1.jpg" alt="成員名稱 1" class="member-avatar">
+                    <div class="member-info">
+                        <h3>成員名稱 1</h3>
+                        <p class="role">職位/角色 1</p>
+                        <p class="contribution">貢獻/介紹 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="member-container">
+                <div class="member">
+                    <img src="/file/picture/member2.jpg" alt="成員名稱 2" class="member-avatar">
+                    <div class="member-info">
+                        <h3>成員名稱 2</h3>
+                        <p class="role">職位/角色 2</p>
+                        <p class="contribution">貢獻/介紹 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="department-container">
+            <h2>部門名稱 2</h2>
+            <div class="member-container">
+                <div class="member">
+                    <img src="/file/picture/member3.jpg" alt="成員名稱 3" class="member-avatar">
+                    <div class="member-info">
+                        <h3>成員名稱 3</h3>
+                        <p class="role">職位/角色 3</p>
+                        <p class="contribution">貢獻/介紹 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            版權所有 © 2025-<span id="current-year"></span> 智語Ligent Bot。保留所有權利。
+        </p>
+    </footer>
+
+    <script>
+        function adjustFooterPosition() {
+            const body = document.body;
+            const html = document.documentElement;
+            const windowHeight = window.innerHeight;
+            const bodyHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+            const footer = document.querySelector('footer');
+
+            if (bodyHeight + footer.offsetHeight <= windowHeight) {
+                footer.style.position = 'absolute';
+                footer.style.bottom = '0';
+            } else {
+                footer.style.position = 'static';
+            }
+        }
+
+        adjustFooterPosition();
+        window.addEventListener('resize', adjustFooterPosition);
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentYearSpan = document.getElementById('current-year');
+            const currentYear = new Date().getFullYear();
+            currentYearSpan.textContent = currentYear;
+        });
+    </script>
+</body>
+
+</html>

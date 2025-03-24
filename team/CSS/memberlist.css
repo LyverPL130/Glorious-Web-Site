@@ -1,0 +1,73 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: sans-serif;
+    margin: 0;
+}
+.member-list-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 200, 255, 0.3);
+}
+
+.member-list-container h1 {
+    font-size: 2.5em;
+    color: #81d4fa;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.department-container {
+    margin-bottom: 30px;
+}
+
+.department-container h2 {
+    font-size: 2em;
+    color: #81d4fa;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.member-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 200, 255, 0.3);
+    background-color: #9494942a;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+}
+
+.member-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.member-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #9e9e9e;
+}
+
+.member-info .role {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #81d4fa;
+}
+
+.member-info .contribution {
+    font-size: 1em;
+    line-height: 1.6;
+}
