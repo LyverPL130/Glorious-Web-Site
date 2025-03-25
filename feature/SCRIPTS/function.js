@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const functionContents = { // 修改這裡
       f1: '<h2><a href="#f1_c1">功能類別 1</a></h2><h2><a href="#f1_c2">功能類別 2</a></h2>', // 修改這裡
       f1_c1: '<h2><a href="#f1_c1_cm1">功能內容 1</a></h2><h2><a href="#f1_c1_cm2">功能內容 2</a></h2><h2><a href="#f1_c1_cm3">功能內容 3</a></h2>', // 修改這裡
-      f1_c1_cm1: '<h1>功能內容 1 標題</h1><p>這是功能內容 1 的內容。<br>這是換行。</p><img src="../file/picture/logo.png" alt="logo">', // 修改這裡
-      f1_c1_cm2: '<h1>功能內容 2 標題</h1><p>這是功能內容 2 的內容。</p><img src="../file/picture/logo.png" alt="logo">', // 修改這裡
-      f1_c1_cm3: '<h1>功能內容 3 標題</h1><p>這是功能內容 3 的內容。</p><img src="../file/picture/logo.png" alt="logo">', // 修改這裡
-      f1_c2_cm1: '<h1>功能內容 4 標題</h1><p>這是功能內容 4 的內容。</p><img src="../file/picture/logo.png" alt="logo">', // 修改這裡
-      f1_c2_cm2: '<h1>功能內容 5 標題</h1><p>這是功能內容 5 的內容。</p><img src="../file/picture/logo.png" alt="logo">', // 修改這裡
-      f2_c1_cm1: '<h1>功能內容 6 標題</h1><p>這是功能內容 6 的內容。</p><img src="../file/picture/logo.png" alt="logo">', // 修改這裡
+      f1_c1_cm1: '<h1>功能內容 1 標題</h1><p>這是功能內容 1 的內容。<br>這是換行。</p><img src="/file/picture/logo.png" alt="logo">', // 修改這裡
+      f1_c1_cm2: '<h1>功能內容 2 標題</h1><p>這是功能內容 2 的內容。</p><img src="/file/picture/logo.png" alt="logo">', // 修改這裡
+      f1_c1_cm3: '<h1>功能內容 3 標題</h1><p>這是功能內容 3 的內容。</p><img src="/file/picture/logo.png" alt="logo">', // 修改這裡
+      f1_c2_cm1: '<h1>功能內容 4 標題</h1><p>這是功能內容 4 的內容。</p><img src="/file/picture/logo.png" alt="logo">', // 修改這裡
+      f1_c2_cm2: '<h1>功能內容 5 標題</h1><p>這是功能內容 5 的內容。</p><img src="/file/picture/logo.png" alt="logo">', // 修改這裡
+      f2_c1_cm1: '<h1>功能內容 6 標題</h1><p>這是功能內容 6 的內容。</p><img src="/file/picture/logo.png" alt="logo">', // 修改這裡
     };
   
     // 讀取網址中的錨點

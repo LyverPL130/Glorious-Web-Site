@@ -37,7 +37,7 @@ body {
   color: #81d4fa;
 }
 .nav-rectangle {
-  background-image: url('../file/picture/icon.png');
+  background-image: url('/file/picture/icon.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -67,7 +67,7 @@ body {
   width: clamp(40%, 50%, 40%); /* 根據視窗尺寸調整寬度 */
   flex-grow: 1; 
   padding-bottom: clamp(30%, 35%, 30%); /* 同步調整高度，根據寬度比例 */
-  background-image: url('../file/picture/icon.png');
+  background-image: url('/file/picture/icon.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

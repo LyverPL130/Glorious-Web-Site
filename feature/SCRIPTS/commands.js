@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const commandContents = {
       t1: '<h2><a href="#t1_c1">分類1</a></h2><h2><a href="#t1_c1">分類2</a></h2>',
       t1_c1: '<h2><a href="#t1_c1_cm2">指令1</a></h2><h2><a href="#t1_c1_cm2">指令2</a></h2><h2><a href="#t1_c1_cm3">指令3</a></h2>',
-      t1_c1_cm1: '<h1>指令 1 標題</h1><p>這是指令 1 的內容。<br>這是換行。</p><img src="../file/picture/logo.png" alt="logo">',
-      t1_c1_cm2: '<h1>指令 2 標題</h1><p>這是指令 2 的內容。</p><img src="../file/picture/logo.png" alt="logo">',
-      t1_c1_cm3: '<h1>指令 3 標題</h1><p>這是指令 3 的內容。</p><img src="../file/picture/logo.png" alt="logo">',
-      t1_c2_cm1: '<h1>指令 4 標題</h1><p>這是指令 4 的內容。</p><img src="../file/picture/logo.png" alt="logo">',
-      t1_c2_cm2: '<h1>指令 5 標題</h1><p>這是指令 5 的內容。</p><img src="../file/picture/logo.png" alt="logo">',
-      t2_c1_cm1: '<h1>指令 6 標題</h1><p>這是指令 6 的內容。</p><img src="../file/picture/logo.png" alt="logo">',
+      t1_c1_cm1: '<h1>指令 1 標題</h1><p>這是指令 1 的內容。<br>這是換行。</p><img src="/file/picture/logo.png" alt="logo">',
+      t1_c1_cm2: '<h1>指令 2 標題</h1><p>這是指令 2 的內容。</p><img src="/file/picture/logo.png" alt="logo">',
+      t1_c1_cm3: '<h1>指令 3 標題</h1><p>這是指令 3 的內容。</p><img src="/file/picture/logo.png" alt="logo">',
+      t1_c2_cm1: '<h1>指令 4 標題</h1><p>這是指令 4 的內容。</p><img src="/file/picture/logo.png" alt="logo">',
+      t1_c2_cm2: '<h1>指令 5 標題</h1><p>這是指令 5 的內容。</p><img src="/file/picture/logo.png" alt="logo">',
+      t2_c1_cm1: '<h1>指令 6 標題</h1><p>這是指令 6 的內容。</p><img src="/file/picture/logo.png" alt="logo">',
     };
   
     // 讀取網址中的錨點
