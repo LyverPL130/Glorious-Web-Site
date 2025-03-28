@@ -7,10 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "boris.130@icloud.com";
     $subject = "來自網站的表單提交";
     $txt = "姓名： " . $name . "\n電子郵件： " . $email . "\n訊息： " . $message;
-    $headers = "From: bs130.glorious@maomy.top"
+    $headers = "From: bs130.glorious@maomy.top\r\n";
 
-    mail($to, $subject, $txt, $headers);
-    echo "表單已成功提交！";
+    if (mail($to, $subject, $txt, $headers)) {
+        echo "表單已成功提交！";
+    } else {
+        echo "錯誤：無法發送電子郵件！";
+    }
 } else {
     echo "錯誤!"
 }
