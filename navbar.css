@@ -1,5 +1,6 @@
   .navbar {
     position: sticky;
+    z-index: 100;
     top:0;
     min-height: 110px; /* 確保最小高度 */
     padding: 10px;
