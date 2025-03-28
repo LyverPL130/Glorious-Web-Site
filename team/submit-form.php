@@ -11,5 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     mail($to, $subject, $txt, $headers);
     echo "表單已成功提交！";
+} else {
+    echo "錯誤!"
 }
 ?>
