@@ -83,7 +83,7 @@ body {
 }
 
 .navbar .home:hover span {
-  color: #fccc6d;
+  color: #81d4fa;
 }
 
 .navbar a {
@@ -111,6 +111,8 @@ body {
 
 .title_content h1 {
   font-size: 4em;
+  filter:
+    drop-shadow(0 0 3px rgba(255, 255, 255, 0.548)) drop-shadow(0 0 7px rgba(255, 255, 255, 0.397)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.253));
 }
 
 .title_content h2 {
@@ -127,7 +129,22 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.CopyRight {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: auto;
+    padding: 10px;
+    color: #e0e0e0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    text-align: left;
+}
 
+.CopyRight p {
+    margin: 0;
+    padding: 0;
+}
 .description_content {
   flex-shrink: 0;
   flex-basis: auto;
@@ -141,7 +158,75 @@ body {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  width: 1;
+}
+
+.about-us-content {
+  width: 100%;
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
+}
+
+.footer-list {
+  background-color: #414141;
+  border: 3px solid #252525;
+  border-top: none;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-content {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(31, 31, 31);
+}
+
+.about-us-content {
+  width: 100%;
+  background-color: #414141;
+  border: 3px solid #252525;
+}
+
+.footer-about-us {
+  width: 40%;
+  border-right: 2px solid #252525;
+}
+
+.thelight-logo-footer {
+  margin: 20px;
+  width: 60%;
+  height: auto;
+}
+
+.footer-content h1 {
+  color: #90c5ce;
+  font-size: 2em;
+}
+
+.footer-content h2 a {
+  color: #ffffff;
+  font-size: 1em;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-content h2 a:hover {
+  color: #81d4fa;
+}
+
+.footer-about-us a {
+  text-decoration: none;
+  color: #90c5ce;
+  transition: color 0.3s ease;
+}
+
+.footer-about-us a:hover {
+  color: #25baff;
 }

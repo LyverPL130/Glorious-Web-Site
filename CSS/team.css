@@ -95,7 +95,7 @@ body {
 }
 
 .navbar .home:hover span {
-    color: #fccc6d;
+    color: #81d4fa;
 }
 
 h1 {
@@ -295,6 +295,6 @@ footer {
 
 .thelight-logo-footer {
     margin: 20px;
-    background-color: #242424;
     width: 60%;
+    height: auto;
 }
