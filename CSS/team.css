@@ -198,6 +198,7 @@ h2 {
     padding-left: 1em;
     color: #e0e0e0;
     border: 3px solid #333;
+        width:60%;
 }
 
 .member {
@@ -252,49 +253,103 @@ h2 {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    width: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us-content {
-    width: 100%;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-list {
-    background-color: #383838;
-    border: 3px solid #252525;
-    border-top: none;
-    width: 100%;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: row;
-}
-
-.text-content {
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(31, 31, 31);
+  background-color: #414141;
+  border: 3px solid #252525;
+  border-top: none;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
 }
 
 .about-us-content {
-    width: 100%;
-    background-color: #383838;
-    border: 3px solid #252525;
-
+  width: 100%;
+  background-color: #414141;
+  border: 3px solid #252525;
 }
 
 .footer-about-us {
-    width: 40%;
+  width: 40%;
+  border-right: 2px solid #252525;
+}
+.footer-about-us h1 {
+    font-size: 2em;
+}
+.about-us-content h2 {
+    font-size: 1.5em;
+}
+.thelight-logo-footer {
+  margin: 20px;
+  width: 60%;
+  height: auto;
 }
 
-.thelight-logo-footer {
-    margin: 20px;
-    width: 60%;
-    height: auto;
+.footer-content h1 {
+  color: #90c5ce;
+  font-size: 2em;
+}
+
+.footer-content h2 {
+    font-size: 1.5em;
+}
+.footer-content h2 a {
+  color: #ffffff;
+  font-size: 1em;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-content h2 a:hover {
+  color: #81d4fa;
+}
+
+.footer-about-us a {
+  text-decoration: none;
+  color: #90c5ce;
+  transition: color 0.3s ease;
+}
+
+.footer-about-us a:hover {
+  color: #25baff;
+}
+.content-footer {
+  background-color: #414141;
+  border: 3px solid #252525;
+  border-top: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.content-footer h2 {
+    font-size: 1.5em;
+}
+.content-footer h2 a {
+  color: #81d4fa;
+  font-size: 1em;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.content-footer h2 a:hover {
+  color: #25baff;
+}
+.text-content {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(31, 31, 31);
 }
