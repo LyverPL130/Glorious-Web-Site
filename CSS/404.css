@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    min-height: max-content;
+      height: 95vh;
+    background: #000000;
+    color: #919191;
+    font-family: 'Roboto Mono', monospace;
+}
+.circle {
+    border: 3px solid #aaaaaa;
+    padding: 20px;
+    border-radius:50vh;
+    box-shadow: 0 30px 100px rgba(207, 207, 207, 0.3);
+}
+.circle .circle {
+    background-color: #444444a8;
+}
+.candle {
+    max-width: 50%;
+    height: auto;
+    filter:
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.3));
+}
+.home-button {
+    background-color: #383838;
+    border: 3px solid #252525;
+    color: #aaaaaa;
+    height: auto;
+    max-width: 150px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #4a4a4a;
+    border-color: #383838;
+    box-shadow: 0 4px 15px rgba(180, 180, 180, 0.3);
+}
+
+.CopyRight {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: auto;
+    padding: 10px;
+    color: #e0e0e0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.CopyRight p {
+    margin: 0;
+    padding: 0;
+}
